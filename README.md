@@ -110,60 +110,39 @@ Common options (exact flags may vary slightly per script):
 ### 3.1. Motif-based baseline and TSMP–Motif
 ```bash
 # 1) SMPM baseline (motif only)
-python smpm_plus_temporal_lr_multi.py \
-  --dataset email-Enron \
-  --runs 5
+python smpm_plus_temporal_lr_multi.py --dataset email-Enron --runs 5
 
 # 2) TSMP–Motif (motif + temporal features)
-python smpm_plus_temporal_lr_multi.py \
-  --dataset email-Enron \
-  --runs 5 \
+python smpm_plus_temporal_lr_multi.py --dataset email-Enron --runs 5 \
   --use_temporal
-
 ```
 
 ### 3.2. TSMP–LocalStat (edge + degree + common neighbors)
 
 ```bash
 # LocalStat only
-python structA_plus_temporal_lr_multi.py \
-  --dataset email-Enron \
-  --runs 5
+python structA_plus_temporal_lr_multi.py --dataset email-Enron --runs 5
 
 # TSMP–LocalStat (LocalStat + temporal)
-python structA_plus_temporal_lr_multi.py \
-  --dataset email-Enron \
-  --runs 5 \
-  --use_temporal
-
+python structA_plus_temporal_lr_multi.py --dataset email-Enron --runs 5 --use_temporal
 ```
 
 ### 3.3. TSMP–TriEnv (triangle-environment features)
 ```bash
 # TriEnv only
-python structB_plus_temporal_lr_multi.py \
-  --dataset contact-high-school \
-  --runs 5
+python structB_plus_temporal_lr_multi.py --dataset contact-high-school --runs 5
 
 # TSMP–TriEnv (TriEnv + temporal)
-python structB_plus_temporal_lr_multi.py \
-  --dataset contact-high-school \
-  --runs 5 \
-  --use_temporal
+python structB_plus_temporal_lr_multi.py --dataset contact-high-school --runs 5 --use_temporal
 ```
 ### 3.4. TSMP–Embed (Node2Vec-based encoder)
 
 ```bash
 # Embed encoder only
-python structC_embed_plus_temporal_lr_multi.py \
-  --dataset coauth-DBLP \
-  --runs 3
+python structC_embed_plus_temporal_lr_multi.py --dataset coauth-DBLP --runs 5
 
 # TSMP–Embed (Embedding + temporal)
-python structC_embed_plus_temporal_lr_multi.py \
-  --dataset coauth-DBLP \
-  --runs 3 \
-  --use_temporal
+python structC_embed_plus_temporal_lr_multi.py --dataset coauth-DBLP --runs 5 --use_temporal
 ```
 
 ## 4. Citation
