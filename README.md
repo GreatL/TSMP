@@ -113,8 +113,7 @@ Common options (exact flags may vary slightly per script):
 python smpm_plus_temporal_lr_multi.py --dataset email-Enron --runs 5
 
 # 2) TSMP–Motif (motif + temporal features)
-python smpm_plus_temporal_lr_multi.py --dataset email-Enron --runs 5 \
-  --use_temporal
+python smpm_plus_temporal_lr_multi.py --dataset email-Enron --runs 5 --use_temporal
 ```
 
 ### 3.2. TSMP–LocalStat (edge + degree + common neighbors)
